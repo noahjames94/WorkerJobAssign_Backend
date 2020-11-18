@@ -1,0 +1,8 @@
+node_modules
+.env
+_VERSION
+package-lock.json
+logger.log
+.idea
+.docker/data
+.github

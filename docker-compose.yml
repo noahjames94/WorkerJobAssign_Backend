@@ -1,0 +1,44 @@
+version: '3'
+services:
+  reconed:
+    image: backend:latest
+    # uncomment this if you want to build an image as yourself
+    # build:
+    #   context: .
+    container_name: reconed_container1
+    tty: true
+    stdin_open: true
+    ports:
+      - '8443:${PORT}'
+      - 7777:8080
+    volumes:
+      - .:/opt/Re_ConEd
+      - ./storage:/opt/Re_ConEd/storage
+    command: bash -c "
+        chmod -x /opt/Re_ConEd/scripts/* &&
+        source /opt/Re_ConEd/scripts/start_react_server.sh &&
+        start_react_server"
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:3.6
+    container_name: reconed_mongodb_container1
+    ports:
+    - 27019:27017
+    environment:
+      MONGO_DATA_DIR: /data/db
+      MONGO_LOG_DIR: /dev/null
+    volumes:
+      - .docker/data/mongo:/data/db
+  mongo-express:
+    image: mongo-express
+    container_name: reconed_mongo_express_container1
+    restart: always
+    ports:
+      - 8888:8081
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongodb
+    depends_on:
+      - mongodb
+volumes:
+  storage:

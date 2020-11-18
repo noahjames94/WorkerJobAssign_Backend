@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "emitDecoratorMetadata":true,
+    "types": [
+      "reflect-metadata",
+      "node"
+    ],
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "target": "es2017",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "paths": {
+      "@*": [
+        "*/"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".vscode"
+  ]
+}

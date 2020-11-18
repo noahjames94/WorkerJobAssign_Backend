@@ -1,0 +1,137 @@
+<div id="pageHeader">
+    <table style="margin-left: auto; margin-right: auto; width: 1000px;">
+        <tr>
+            <td colspan="3" style="border-bottom: 2px solid black; background-color: #7f7f7f; color: white; font-weight: bold; text-align: center">CE Solutions Group</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="width: 80%; height: 50px" align="center"><b style="font-weight: 900">CON EDISON
+                FLAGGING / PARKING LOCATION
+                TIMESHEET</b></td>
+            <td style="width: 20%; color: darkred"><b>No: <span id="codeNumber">123456</span></b></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Requestor: <span id="requestor" style="display: inline-block; border-bottom: 1px solid ; width: 200px"></span>
+                Date Requested: <span id="requestDate" style="display: inline-block; border-bottom: 1px solid ; width: 200px; margin-right: 10px"></span>
+                Time Requested: <span id="requestTime" style="display: inline-block; border-bottom: 1px solid ; width: 200px; margin-right: 10px"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Department: ELECTRIC<span style="display: inline-block; border-bottom: 1px solid ; width: 300px" id="electric"></span>
+                GAS <span id="gas" style="display: inline-block; border-bottom: 1px solid ; width: 413px"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            Section #: <span id="sectionNum"  style="display: inline-block; border-bottom: 1px solid ; width: 80px"></span>
+                            Account # <span id="accountNum" style="display: inline-block; border-bottom: 1px solid ; width: 165px"></span>
+                            Work Request #: <span id="workRequestNum" style="display: inline-block; border-bottom: 1px solid ; width: 165px"></span>
+                            PO #: <span id="po" style="display: inline-block; border-bottom: 1px solid ; width: 197px"></span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Location Address # 1: <span id="location1"
+                                                        style="display: inline-block; border-bottom: 1px solid ; width: 350px"></span>
+                Structure(s) to Secure: <span id="secure1"
+                                             style="display: inline-block; border-bottom: 1px solid ; width: 265px"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Cross Street: <span id="crossStreet1"
+                                                style="display: inline-block; border-bottom: 1px solid ; width: 350px; margin-right: 20px"></span>
+                Muni /Borough: <span id="borough1" style="display: inline-block; border-bottom: 1px solid ; width: 344px"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Location Address # 2: <span id="location2"
+                                                        style="display: inline-block; border-bottom: 1px solid ; width: 290px; margin-right: 20px"></span>
+                Muni / Borough: <span id="borough2"
+                                     style="display: inline-block; border-bottom: 1px solid ; width: 342px"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Location Address # 3: <span id="location3"
+                                                        style="display: inline-block; border-bottom: 1px solid ; width: 290px; margin-right: 20px"></span>
+                Muni / Borough: <span id="borough3"
+                                     style="display: inline-block; border-bottom: 1px solid ; width: 342px"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">Location Address # 4: <span id="location4"
+                                                        style="display: inline-block; border-bottom: 1px solid ; width: 290px; margin-right: 20px"></span>
+                Muni / Borough: <span id="borough4"
+                                     style="display: inline-block; border-bottom: 1px solid ; width: 342px"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Flagger / Spotter Name:<span id="flagger"
+                                                         style="display: inline-block; border-bottom: 1px solid ; width: 500px"></span>
+                Confirmation #: <span id="confirmation"
+                                     style="display: inline-block; border-bottom: 1px solid ; width: 146px"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <table style="background-color: #d8d8d8;">
+                    <tr>
+                        <td colspan="3">Start Date: <span id="startDate"
+                                              style="display: inline-block; border-bottom: 1px solid ; width: 225px"></span>
+                        Start Time: <span id="startTime"
+                                              style="display: inline-block; border-bottom: 1px solid ; width: 201px; margin-right: 20px"></span>
+                        Please Check: (<span id=lunch">  </span>) Lunch (<span id="dinner">  </span>)
+                        Dinner (<span id="noBreak">  </span>) No Break
+                    </tr>
+                    <tr>
+                        <td colspan="3">Finish Date: <span id="finishDate" style="display: inline-block; border-bottom: 1px solid ; width: 215px"></span>
+                        Finish Time: <span id="finishTime" style="display: inline-block; border-bottom: 1px solid ; width: 190px; margin-right: 20px"></span>
+                        Total Hours: <span id="totalHours" style="display: inline-block; border-bottom: 1px solid ; width: 215px"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Con Edison Truck #: <span id="conEdisonTruck"
+                                                                  style="display: inline-block; border-bottom: 1px solid ; width: 260px"></span>
+                            Con Edison Supervisor: <span id="conEdisonSupervisor"
+                                                          style="display: inline-block; border-bottom: 1px solid ; width: 350px"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            Con Ed Rep Signature: <span id="conEdRepSignature"
+                                                        style="display: inline-block; border-bottom: 1px solid ; width: 330px"></span>
+                            Date: <span id="date"
+                                        style="display: inline-block; border-bottom: 1px solid ; width: 120px"></span>
+                            Employee #: <span id="employee"
+                                     style="display: inline-block; border-bottom: 1px solid; width: 173px"></span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" height="30">Reviewing Dispatcher Signature: <span id="dispatcherSignature"
+                                                                              style="display: inline-block; border-bottom: 1px solid ; width: 515px"></span>
+            Date: <span id="invoiceDate">_____/_____/_____</span></td>
+        </tr>
+    </table>
+</div>
+
+<div id="pageFooter">
+    <table style="margin-left: auto; margin-right: auto;">
+        <tr>
+            <td colspan="3" align="center" style="color: red; font-size: 12px; font-weight: bold">YOU MUST TAKE A CLEAR PHOTO OF THIS TIMESHEET AND SEND IT TO ADMIN AT THE COMPLETION OF YOUR JOB</td>
+        </tr>
+    </table>
+</div>
+
